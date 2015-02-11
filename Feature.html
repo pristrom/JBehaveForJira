@@ -5,181 +5,227 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Jbehave for JIRA</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	</head>
-	<body>
-	<!-- ********************************************************* -->
-		<div id="header-wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="12u">
-						
-						<header id="header">
-						<a href="index.html"><img src="images/logoo.png" alt="" class="leftimg" /></a>
-							<h1><a href="index.html" id="logo">Jbehave for JIRA</a></h1>
-							<nav id="nav">
-								<a href="index.html">Home</a>
-								<a href="Feature.html" class="current-page-item">Features</a>
-								<a href="Documentation.html">Documentation</a>
-								<a href="Buy.html">Pricing & Purchase</a>
-								<a href="tF.A.Q.html">FAQ</a>
-							</nav>
-						</header>
-					
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="main">
-			<div class="container">
-				<div class="row main-row">
-					<div class="9u">
-						
-						<section class="left-content">
-						
-							<center><h2>Features of Jbehave for JIRA:</h2></center>
-							<hr>
-							</br>
-							</br>
-							</br>
-							<h2>1. Story syntax validation</h2>
-							<p>If you make a mistake in the story, e.g. misspell a keyword or place it in the wrong position then this will be highlighted (underscored in red) as an error enabling you to easily identify and correct it without having to run the story and then only after looking through the build log to realize that it has failed to be parsed correctly.
-							</p>
-						
-							<p class="fig">
-   <img src="images/skrin1.jpg" width="800" height="404" alt="Иллюстрация">
-  </p>
-							
-						
-							</br>
-							
-							  <h2>2. Step availability identification</h2>
-							  <p>When you include a step in your story that has been implemented it should be styled using a regular font and any step parameters will be marked in bold and purple color. Any new or pending steps on the other hand will be shown in italic font without any parameter markings.</p>
-							  <hr>
-							</br>
-							   <h2>3. Autocomplete support</h2>
-							    <p>Have you ever had to write a JBehave story outside of an IDE? Then you would know what a pain it is to actually figure our what steps are available and what step parameters are expected to be provided. Using this tool it will be a painless task - just hit 'Ctr+Space' to bring up a drop down menu containing auto complete suggestions matching your current step input. Parameters expected by the proposed steps are clearly highlighted in bold and purple font.</p>
-								<p> Hint! - auto complete feature is also available in other story sections, try using it in 'Meta' or 'Narrative' sections to give your story writing a boost.</p>
-								<p class="fig">
-								<img src="images/skrin2.jpg" width="800" height="404" alt="Иллюстрация">
-								</p>
-								
-								<hr>
-							</br>
-							       <h2>4. Story reports directly in Jira</h2>
-							  <p>If you have been lacking a quick and simple way to share your story run reports with the rest of your team then you will appreciate this feature. View HTML reports produced by executing the story directly on the Jira's view issue page. </p>
-							  <p>Additionally if you have more than one working environment (e.g. DEV, TEST, UAT, etc.) then you will be able to see all of the reports from these different environments on the same view issue page. Never again report a user story as complete only to find out later that it has failed in your UAT environment.</p>
-							  
-							  <p class="fig">
-								<img src="images/skrin4.jpg" width="800" height="404" alt="Иллюстрация">
-								</p> 
-							  <hr>
-							</br>
-							  <h2> Advanced features for step parameters</h2>
-							  <p>Step parametrization is the essence of BDD style story writing and in order to get the most value out of it you need to be able to specify them with ease, that is why we have concentrated our efforts on implementing additional support for specifying step parameter values, both for simple and for tabular parameter types. </p>							  
-							
-							  <h2>Features that help with this:</h2>
-							  <p>• Missing parameter highlight (more info)</p>
-							  
-							  <p class="fig">
-								<img src="images/skrinsmal1.jpg" width="425" height="185" alt="Иллюстрация">
-								</p> 
-							  <p>• Automatic validation of parameter value against a set of allowed values in case provided in the step implementation (more info)</p>
-							  <p>• Automatic validation of parameter value against a format specified in step implementation (more info)</p>
-							   <p class="fig">
-								<img src="images/skrinsmal2.jpg" width="425" height="185" alt="Иллюстрация">
-							  <p>• Auto complete support showing set of allowed values for a parameter if provided in the step implementation</p>
-							  <p>• Auto insert table header row for tabular parameter types (more info)</p>
-							   <p>• Auto completion support for tabular parameter column names</p>
-							    <p>• Automatic alignment of tabular parameters as you type</p>
-								 <p>• Tabular parameter rows validation for correct number fields and correct syntax like opening and closing pipe character</p>
-								  <p>• Automatic validation of individual values inside tabular parameters against allowed values or format specified in step implementation and more...</p>
-								  
-						</section>
-						
-					
-					</div>
-					<div class="3u">
+<head>
+    <title>Jbehave for JIRA</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="css/skel-noscript.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style-desktop.css"/>
+    </noscript>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<!-- ********************************************************* -->
+<div id="header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="12u">
 
-						<section>
-							
-									<a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin"><img src="images/pic8.jpg" alt="" class="left" /></a>
-									
-								
-						</section>
-					</div>
-					
-					</br>
-					</br>
-						
+                <header id="header">
+                    <a href="index.html"><img src="images/logoo.png" alt="" class="leftimg"/></a>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="footer-wrapper">
-			<div class="container">
-				<div class="row">
-					<div class="8u">
-						
-						<section>
-							
-							<div>
-							</br>
-							<h2>Links</h2>
-								<div class="row">
-									<div class="3u">
-										<ul class="link-list">
-											<li><a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin">Atlassian Marketplace</a></li>
-											<li><a href="https://answers.atlassian.com/questions/topics/753754/addon-jira-timesheet-plugin">Atlassian Answers</a></li>																					
-										</ul>
-									</div>
-									
-									
-									
-							</div>
-						</section>
-					
-					</div>
-					<div class="4u">
+                    <h1><a href="index.html" id="logo">Jbehave for JIRA</a></h1>
+                    <nav id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="Feature.html" class="current-page-item">Features</a>
+                        <a href="Documentation.html">Documentation</a>
+                        <a href="Buy.html">Pricing & Purchase</a>
+                        <a href="tF.A.Q.html">FAQ</a>
+                    </nav>
+                </header>
 
-						<section>
-						</br>
-							<h2>Contact info</h2>
-							<ul class="link-list">
-											<li>Address: Prague, Czech Republic</li>
-											<li>E-mail: <a href="#">m.pristrom@gmail.</a></li>
-											<li> &copy; Untitled  All rights reserved by Maryna Pristrom</li>
-							
-						</section>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="container">
+        <div class="row main-row">
+            <div class="9u">
 
-					</div>
-				</div>
-				<div class="row">
-					<div class="12u">
+                <section class="left-content">
 
-						
+                    <center><h2>Features of Jbehave for JIRA:</h2></center>
+                    <hr>
+                    </br>
+                    </br>
+                    </br>
+                    <h2>1. Story syntax validation</h2>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	<!-- ********************************************************* -->
-	</body>
+                    <p>If you make a mistake in the story, e.g. misspell a keyword or place it in the wrong position
+                        then this will be highlighted (underscored in red) as an error enabling you to easily identify
+                        and correct it without having to run the story and then only after looking through the build log
+                        to realize that it has failed to be parsed correctly.
+                    </p>
+
+                    <p class="fig">
+                        <img src="images/skrin1.jpg" width="800" height="404" alt="Иллюстрация">
+                    </p>
+
+
+                    </br>
+
+                    <h2>2. Step availability identification</h2>
+
+                    <p>When you include a step in your story that has been implemented it should be styled using a
+                        regular font and any step parameters will be marked in bold and purple color. Any new or pending
+                        steps on the other hand will be shown in italic font without any parameter markings.</p>
+                    <hr>
+                    </br>
+                    <h2>3. Autocomplete support</h2>
+
+                    <p>Have you ever had to write a JBehave story outside of an IDE? Then you would know what a pain it
+                        is to actually figure our what steps are available and what step parameters are expected to be
+                        provided. Using this tool it will be a painless task - just hit 'Ctr+Space' to bring up a drop
+                        down menu containing auto complete suggestions matching your current step input. Parameters
+                        expected by the proposed steps are clearly highlighted in bold and purple font.</p>
+
+                    <p> Hint! - auto complete feature is also available in other story sections, try using it in 'Meta'
+                        or 'Narrative' sections to give your story writing a boost.</p>
+
+                    <p class="fig">
+                        <img src="images/skrin2.jpg" width="800" height="404" alt="Иллюстрация">
+                    </p>
+
+                    <hr>
+                    </br>
+                    <h2>4. Story reports directly in Jira</h2>
+
+                    <p>If you have been lacking a quick and simple way to share your story run reports with the rest of
+                        your team then you will appreciate this feature. View HTML reports produced by executing the
+                        story directly on the Jira's view issue page. </p>
+
+                    <p>Additionally if you have more than one working environment (e.g. DEV, TEST, UAT, etc.) then you
+                        will be able to see all of the reports from these different environments on the same view issue
+                        page. Never again report a user story as complete only to find out later that it has failed in
+                        your UAT environment.</p>
+
+                    <p class="fig">
+                        <img src="images/skrin4.jpg" width="800" height="404" alt="Иллюстрация">
+                    </p>
+                    <hr>
+                    </br>
+                    <h2> Advanced features for step parameters</h2>
+
+                    <p>Step parametrization is the essence of BDD style story writing and in order to get the most value
+                        out of it you need to be able to specify them with ease, that is why we have concentrated our
+                        efforts on implementing additional support for specifying step parameter values, both for simple
+                        and for tabular parameter types. </p>
+
+                    <h2>Features that help with this:</h2>
+
+                    <p>• Missing parameter highlight (more info)</p>
+
+                    <p class="fig">
+                        <img src="images/skrinsmal1.jpg" width="425" height="185" alt="Иллюстрация">
+                    </p>
+
+                    <p>• Automatic validation of parameter value against a set of allowed values in case provided in the
+                        step implementation (more info)</p>
+
+                    <p>• Automatic validation of parameter value against a format specified in step implementation (more
+                        info)</p>
+
+                    <p class="fig">
+                        <img src="images/skrinsmal2.jpg" width="425" height="185" alt="Иллюстрация">
+
+                    <p>• Auto complete support showing set of allowed values for a parameter if provided in the step
+                        implementation</p>
+
+                    <p>• Auto insert table header row for tabular parameter types (more info)</p>
+
+                    <p>• Auto completion support for tabular parameter column names</p>
+
+                    <p>• Automatic alignment of tabular parameters as you type</p>
+
+                    <p>• Tabular parameter rows validation for correct number fields and correct syntax like opening and
+                        closing pipe character</p>
+
+                    <p>• Automatic validation of individual values inside tabular parameters against allowed values or
+                        format specified in step implementation and more...</p>
+
+                </section>
+
+
+            </div>
+            <div class="3u">
+
+                <section>
+
+                    <a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin"><img
+                            src="images/pic8.jpg" alt="" class="left"/></a>
+
+
+                </section>
+            </div>
+
+            </br>
+            </br>
+
+
+        </div>
+    </div>
+</div>
+</div>
+<div id="footer-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+
+                <section>
+
+                    </br>
+                    <h2>Links</h2>
+
+                    <div class="row">
+                        <div class="3u">
+                            <ul class="link-list">
+                                <li><a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin">Atlassian
+                                    Marketplace</a></li>
+                                <li>
+                                    <a href="https://answers.atlassian.com/questions/topics/753754/addon-jira-timesheet-plugin">Atlassian
+                                        Answers</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+            <div class="4u">
+
+                <section>
+                    </br>
+                    <h2>Contact info</h2>
+                    <ul class="link-list">
+                        <li>Address: Prague, Czech Republic</li>
+                        <li>E-mail: <a href="#">m.pristrom@gmail.</a></li>
+                        <li> &copy; Untitled All rights reserved by Maryna Pristrom</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="12u">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ********************************************************* -->
+</body>
 </html>
