@@ -370,7 +370,7 @@ line-height: 2.75em;pointer-events: none;
 			width: 2.75em;
 		}
 
-		.select-wrapper select::-ms-expand {
+		.select-wrapper select:-ms-expand {
 			display: none;
 		}
 

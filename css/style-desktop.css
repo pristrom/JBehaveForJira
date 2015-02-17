@@ -77,22 +77,24 @@
 
 		#header h1 {/*jbehave for jira zahlavie*/
 			position: absolute;
-			left: 160px;/*zahlavije */
+			left: 100px;/*zahlavije */
 			top: 0;
 			color: #fff;
-			font-size: 2.0em;
+			font-size: 1.6em;
 			letter-spacing: -2px;
 			line-height: 86px;
 		}
-
+         #header img {position: absolute;/* raspolozenije logotipa */
+             left: 10px;}
 		#header h1 a {
 			color: #fff;
 			text-decoration: none;
+
 		}
 		
 		#header nav {
 			position: absolute;
-			right: 40px;
+			right: 15px;
 			top: 1px;
 			line-height: 84px;
 			text-transform: Uppercase;
