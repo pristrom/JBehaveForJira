@@ -97,7 +97,7 @@
 			right: 15px;
 			top: 1px;
 			line-height: 84px;
-			text-transform: Uppercase;
+			text-transform: capitalize;
 			font-size: 1.3em;
 			letter-spacing: -1px;
 		}

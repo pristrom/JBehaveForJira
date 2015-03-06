@@ -29,7 +29,7 @@
 	}
 
 	h1,h2 {
-		text-transform: Uppercase;
+		text-transform: capitalize;
 	}
 
 	h2 {
@@ -39,7 +39,7 @@
 	}
 
 	h3,h4 {
-		color: #283121;
+        color: #007897;
 		margin-bottom: 0.5em;
 	}
 

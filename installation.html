@@ -67,16 +67,16 @@
             <div class="3u">
 
                 <section>
-                    <h2>Documentation</h2>
+                    <h2>Installation</h2>
 
                     <div>
                         <div class="row">
                             <div class="11u">
                                 <ul class="link-list">
-                                    <li><a href="#">How it works</a></li>
-                                    <li><a href="#">Enable Plugin for a Jira project</a></li>
-                                    <li><a href="#">Download documentation in PDF</a></li>
-
+                                    <li><a href="#ssylka1">Install Jira Plugin</a></li>
+                                    <li><a href="#ssylka2">Enable Plugin for a Jira project</a></li>
+                                    <li><a href="#ssylka3">Download Plugin Client  </a></li>
+                                    <li><a href="#ssylka4">Configure JBehave runner </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,36 +89,68 @@
                 <section class="middle-content">
 
 
+                    <h3 id="ssylka1">The "JBehave for Jira" plugin can be installed via the Jira's built in "Add-on Management" functionality</h3>
 
-                    <h2>1. Write JBehave story on the view issue page in Jira</h2>
+                    <p>1. Navigate to "Add-ons" section from the administration menu and then click on "Find New Add-ons" from the menu on the left</p>
+                    <p class="fig">
+                        <img src="images/inst1.png" width="800" height="480" alt="Иллюстрация">
+                    </p>
 
-                    <p>Once you have installed the plugin (see installation for more information) you should see two new
-                        panels called "JBehave Story" and "JBehave Story Reports" on the view issue page in Jira. </p>
+                    </br>
+                    <p>2. In the search field type in 'JBehave for Jira' and then click on either "Buy Now" or "Free Trial" against the "Jbehave for Jira" plugin entry. Follow the prompts from then on to complete the installation.
+                    </p>
+                    <p class="fig">
+                        <img src="images/inst2.png" width="800" height="480" alt="Иллюстрация">
+                    </p>
+                    <p>Note: if you are running an older version of Jira that does not come with the built in plugin manager functionality then please contact us for an alternative way on how to install this plugin in your Jira instance. </p>
+                    <hr>
+                    <br>
 
-                    <p>[screenshot of new sections with empty content] </p>
-
-                    <p>"JBehave Story" panel is where you write new or edit an existing JBehave story. You can enter one
-                        JBehave story for one Jira issue. </p>
-
-
-                    <h2>2. Execute JBehave tests as part of your project build</h2>
-
-                    <p>Run your project build either locally or in your continuous integration application which will
-                        execute your JBehave tests. The JBehave runner will download the stories you have written in
-                        Jira, execute them and will then upload the generated story reports back to Jira.</p>
-
-                    <p>Note that there are some prior configuration changes that need to be made in order for this to
-                        work (see installation for more information).</p>
+                    <h3 id="ssylka2">Enable Plugin for a Jira project </h3>
+                    <p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira project. To do so go the "Manage Add-ons" page in the Administration area and then click on "Configure" button against "JBehave for Jira" plugin entry. </p>
 
 
-                    <h2>3. Review story reports on the view issue page</h2>
+                    <p class="fig">
+                        <img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">
+                    </p>
+                    <p>2. In the opened plugin configuration screen, select General tab and then select the projects that you want to have the plugin enabled for and click the relevant arrow button to move it to the enabled projects box and then click Apply Changes button.
+                    </p>
+                    <hr>
 
-                    <p> Uploaded story reports will be available for viewing on the view issue page under a panel titled
-                        "JBehave Story Reports". If you are running your test suit against multiple environments then
-                        several story reports will be shown organized into tabs where each tab label corresponds to the
-                        name of the environment on which the story report was generated </p>
+                    <br>
 
-                    <p> [screenshot of story reports from multiple environments] </p>
+
+                    <h3 id="ssylka3"> Download Plugin Client </h3>
+                    <p>The plugin requires a Java client to work, which comes as in the form of a Jar file that you need to have on your class path when running your JBehave tests. It can be downloaded from this location.</p>
+                    <p>Maven users - the client library will soon be available for download from the maven central repository. Watch this space for an update.</p>
+
+                    <hr>
+                    <br>
+
+
+                    <h3 id="ssylka4">Configure JBehave runner</h3>
+                    <p>For the plugin client to exchange data with the plugin running in your Jira instance you need to make the following changes to your JBehave Embedder (runner):</p>
+                    <p>1. Use JiraStoryPathsFinder implementation to find story paths</p>
+                    <p class="fig">
+                        <img src="images/inst3.png" width="800" height="705" alt="Иллюстрация">
+                    </p>
+                    <p>2. Set JiraStoryLoader as the StoryLoader implemenation to use in your embedder's configuration
+                    </p>
+                    <p class="fig">
+                        <img src="images/inst4.png" width="850" height="580" alt="Иллюстрация">
+                    </p>
+
+
+                    <p>4. Set JiraStepdocReporter as the StepDocReporter implemenattion to use in your embedder's configuration, and then call reportStepdocs method on the Embedder instance after executing your story tests</p>
+
+                    <p class="fig">
+                        <img src="images/inst5.png" width="963" height="961" alt="Иллюстрация">
+                    </p>
+
+                    <p>A complete example project that contains the above changes applied can been downloaded from this location.</p>
+
+
+
                 </section>
 
             </div>
