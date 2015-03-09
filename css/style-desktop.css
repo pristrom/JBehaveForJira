@@ -140,6 +140,7 @@
 	}
 
 	#banner {
+        vertical-align: middle;
 		position: relative;
 		width: 1160px;
 		height: 200px;
@@ -152,11 +153,12 @@
                 z-index:1;
 	}
 
+
 		#banner h2 {
-			
+
 			z-index: 1;
 			width: 100%;
-			top: 100px;
+			/*top: 150px;*/
 			left: 0;
 			font-size: 3.3em;
 			color: #007897;
