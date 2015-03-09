@@ -94,14 +94,14 @@
 
                     <p>1. Navigate to "Add-ons" section from the administration menu and then click on "Find New Add-ons" from the menu on the left</p>
                     <p class="fig">
-                        <img src="images/inst1.png" width="800" height="480" alt="Иллюстрация">
+                        <img src="images/installation/Install%20Jira%20Plugin%20-%201.png" width="800" height="480" alt="Иллюстрация">
                     </p>
 
                     </br>
                     <p>2. In the search field type in 'JBehave for Jira' and then click on either "Buy Now" or "Free Trial" against the "Jbehave for Jira" plugin entry. Follow the prompts from then on to complete the installation.
                     </p>
                     <p class="fig">
-                        <img src="images/inst2.png" width="800" height="480" alt="Иллюстрация">
+                        <img src="images/installation/Install%20Jira%20Plugin%20-%202.png" width="800" height="480" alt="Иллюстрация">
                     </p>
                     <p>Note: if you are running an older version of Jira that does not come with the built in plugin manager functionality then please contact us for an alternative way on how to install this plugin in your Jira instance. </p>
                     <hr>
@@ -131,21 +131,39 @@
 
                     <h3 id="ssylka4">Configure JBehave runner</h3>
                     <p>For the plugin client to exchange data with the plugin running in your Jira instance you need to make the following changes to your JBehave Embedder (runner):</p>
-                    <p>1. Use JiraStoryPathsFinder implementation to find story paths</p>
+
+                    <p>1. Use <strong>JiraStoryPathsFinder</strong> implementation to find story paths</p>
                     <p class="fig">
-                        <img src="images/inst3.png" width="800" height="705" alt="Иллюстрация">
+                        <img src="images/installation/Configure%20runner%20-%20JiraStoryPathsFinder.png"
+                             alt="Иллюстрация">
+                        <!--width="800" -->
+                        <!--height="705" -->
                     </p>
-                    <p>2. Set JiraStoryLoader as the StoryLoader implemenation to use in your embedder's configuration
+
+                    <p>2. Set <strong>JiraStoryLoader</strong> as the StoryLoader implemenation to use in your embedder's configuration
                     </p>
                     <p class="fig">
-                        <img src="images/inst4.png" width="850" height="580" alt="Иллюстрация">
+                        <img src="images/installation/Configure%20runner%20-%20JiraStoryLoader.png"
+                             alt="Иллюстрация">
+                        <!--width="850" -->
+                        <!--height="580" -->
+                    </p>
+
+                    <p>3. Set <strong>JiraStoryReporter</strong> as the StoryReporter implementation to use in your embedder's configuration</p>
+                    <p class="fig">
+                        <img src="images/installation/Configure%20runner%20-%20JiraStoryReporter.png"
+                             alt="Иллюстрация">
+                        <!--width="850" -->
+                        <!--height="580" -->
                     </p>
 
 
-                    <p>4. Set JiraStepdocReporter as the StepDocReporter implemenattion to use in your embedder's configuration, and then call reportStepdocs method on the Embedder instance after executing your story tests</p>
-
+                    <p>4. Set <strong>JiraStepdocReporter</strong> as the StepDocReporter implemenattion to use in your embedder's configuration, and then call reportStepdocs method on the Embedder instance after executing your story tests</p>
                     <p class="fig">
-                        <img src="images/inst5.png" width="963" height="961" alt="Иллюстрация">
+                        <img src="images/inst5.png"
+                             alt="Иллюстрация">
+                        <!--width="963" -->
+                        <!--height="961" -->
                     </p>
 
                     <p>A complete example project that contains the above changes applied can been downloaded from <a href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/src">this</a> location.</p>
