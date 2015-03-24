@@ -13,7 +13,7 @@
 	*,*:before,*:after{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;-o-box-sizing:content-box;-ms-box-sizing:content-box;box-sizing:content-box}
 
 	body {
-		font-size: 14pt;
+		font-size: 13pt;
 		font-family:Gill Sans, Verdana;
 		background-color: #e3e9dc;
 		font-family: 'Ubuntu Condensed', sans-serif;

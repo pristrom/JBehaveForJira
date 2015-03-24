@@ -8,6 +8,8 @@
 
 	body {
 		min-width: 1200px;
+
+        font-family: 'Arial',  serif;
 	}
 
 	section, article {
@@ -80,7 +82,7 @@
 			left: 100px;/*zahlavije */
 			top: 0;
 			color: #fff;
-			font-size: 1.6em;
+			font-size: 1.8em;
 			letter-spacing: -2px;
 			line-height: 86px;
 		}
@@ -157,13 +159,14 @@
 		#banner h2 {
 
 			z-index: 1;
-			width: 100%;
-			/*top: 150px;*/
-			left: 0;
-			font-size: 3.3em;
+			width: 95%;
+            position: absolute;
+            bottom: 95px;
+			font-size: 2.5em;
 			color: #007897;
 			text-align: center;
 			letter-spacing: -4px;
+
 		}
 		
 		#banner span {
@@ -171,9 +174,9 @@
 			position: absolute;
 			z-index: 2;
 			width: 100%;
-			bottom: 105px;
+			bottom: 85px;
 			left: 0;
-			font-size: 2.2em;
+			font-size: 2.3em;
 			color: #fff;
 			text-align: center;
 			letter-spacing: -2px;
