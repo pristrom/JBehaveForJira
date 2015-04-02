@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <script src="js/html5shiv.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <script src="js/custom_scripts.js"></script>
 </head>
 <body>
 <!-- ********************************************************* -->
@@ -43,7 +46,7 @@
 
 
                     <nav id="nav">
-                        <a href="index.html" >Home</a>
+                        <a href="index.html">Home</a>
                         <a href="howitworks.html">How it works</a>
                         <a href="feature.html">Features</a>
                         <a href="benefits.html">Benefits</a>
@@ -58,119 +61,208 @@
     </div>
 </div>
 <div id="main">
-    <div class="container">
-        <div class="row main-row">
-            <div class="3u">
+<div class="container">
+<div class="row main-row">
+    <div class="3u">
 
-                <section>
-                    <h2>Installation</h2>
+        <section>
+            <!--<h2>Installation</h2>-->
+
+            <div>
+                <div class="row">
+                    <div class="11u">
+                        <ul class="link-list">
+                            <li>
+                                <div class="page-shortcut-link selected" controls="pageContentOverview">
+                                    <a href="#">
+                                        Overview
+                                    </a>
+                                </div>
+                                <!--<a href="#ssylka1" >Overview</a>-->
+                            </li>
+                            <li class="page-shortcut-link">
+                                <a href="#ssylka1" controls="pageContentInstallPlugin">Install Jira Plugin</a>
+                            </li>
+                            <li class="page-shortcut-link" controls="pageContentConfigurePlugin">
+                                <a href="#ssylka1">Configure Jira Plugin</a>
+                            </li>
+                            <li class="page-shortcut-link" controls="pageContentInstallClient">
+                                <a href="#ssylka3">Install Plugin Client</a>
+                            </li>
+                            <li class="page-shortcut-link" controls="pageContentConfigureClient">
+                                <a href="#ssylka4">Configure Plugin Client</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="9u skel-cell-important">
+        <section class="middle-content">
+
+            <div id="pageContentOverview" class="page-content selected">
+                <h2>Overview</h2>
+
+                <div>
+                    <p>In order to be able to make use of the JBehaveForJira plugin you need to complete the
+                        following steps:</p>
 
                     <div>
-                        <div class="row">
-                            <div class="11u">
-                                <ul class="link-list">
-                                    <li><a href="#ssylka1">Install Jira Plugin</a></li>
-                                    <!--<li><a href="#ssylka2">Enable Plugin for a Jira project</a></li>-->
-                                    <li><a href="#ssylka3">Download Plugin Client  </a></li>
-                                    <li><a href="#ssylka4">Configure JBehave runner </a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        1. Install the Jira plugin
                     </div>
-                </section>
-
-
-            </div>
-            <div class="9u skel-cell-important">
-                <section class="middle-content">
-
-
-                    <h2 id="ssylka1">Install Jira Plugin</h2>
-                    <p>The "JBehave for Jira" plugin can be installed via the Jira's built in "Add-on Management" functionality</p>
-
-                    <p>1. Navigate to "Add-ons" section from the administration menu and then click on "Find New Add-ons" from the menu on the left</p>
-                    <p class="fig">
-                        <img src="images/installation/Install%20Jira%20Plugin%20-%201.png" width="800" height="480" alt="Иллюстрация">
-                    </p>
-
-                    </br>
-                    <p>2. In the search field type in 'JBehave for Jira' and then click on either "Buy Now" or "Free Trial" against the "Jbehave for Jira" plugin entry. Follow the prompts from then on to complete the installation.
-                    </p>
-                    <p class="fig">
-                        <img src="images/installation/Install%20Jira%20Plugin%20-%202.png" width="800" height="480" alt="Иллюстрация">
-                    </p>
-                    <p>Note: if you are running an older version of Jira that does not come with the built in plugin manager functionality then please contact us for an alternative way on how to install this plugin in your Jira instance. </p>
-                    <hr>
                     <br>
 
-                    <!--<h3 id="ssylka2">Enable Plugin for a Jira project </h3>-->
-                    <!--<p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira project. To do so go the "Manage Add-ons" page in the Administration area and then click on "Configure" button against "JBehave for Jira" plugin entry. </p>-->
-
-
-                    <!--<p class="fig">-->
-                        <!--<img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">-->
-                    <!--</p>-->
-                    <!--<p>2. In the opened plugin configuration screen, select General tab and then select the projects that you want to have the plugin enabled for and click the relevant arrow button to move it to the enabled projects box and then click Apply Changes button.-->
-                    <!--</p>-->
-                    <!--<hr>-->
-
-                    <!--<br>-->
-
-
-                    <h2 id="ssylka3"> Download Plugin Client </h2>
-                    <p>The plugin requires a Java client to work, which comes in the form of a Jar file that you need to have on your class path when running your JBehave tests. It can be downloaded from <a href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/downloads">this</a> location.</p>
-                    <p>Maven users - the client library will soon be available for download from the maven central repository. Watch this space for an update.</p>
-
-                    <hr>
+                    <div>
+                        2. Configure the Jira plugin
+                    </div>
                     <br>
 
+                    <div>
+                        3. Install the plugin client
+                    </div>
+                    <br>
 
-                    <h2 id="ssylka4">Configure JBehave runner</h2>
-                    <p>For the plugin client to exchange data with the plugin running in your Jira instance you need to make the following changes to your JBehave Embedder (runner):</p>
+                    <div>
+                        4. Configure the plugin client
+                    </div>
+                    <br>
+                    <br>
 
-                    <p>1. Use <strong>JiraStoryPathsFinder</strong> implementation to find story paths</p>
-                    <p class="fig">
-                        <img src="images/installation/Configure%20runner%20-%20JiraStoryPathsFinder.png"
-                             alt="Иллюстрация">
-                        <!--width="800" -->
-                        <!--height="705" -->
-                    </p>
-
-                    <p>2. Set <strong>JiraStoryLoader</strong> as the StoryLoader implemenation to use in your embedder's configuration
-                    </p>
-                    <p class="fig">
-                        <img src="images/installation/Configure%20runner%20-%20JiraStoryLoader.png"
-                             alt="Иллюстрация">
-                        <!--width="850" -->
-                        <!--height="580" -->
-                    </p>
-
-                    <p>3. Set <strong>JiraStoryReporter</strong> as the StoryReporter implementation to use in your embedder's configuration</p>
-                    <p class="fig">
-                        <img src="images/installation/Configure%20runner%20-%20JiraStoryReporter.png"
-                             alt="Иллюстрация">
-                        <!--width="850" -->
-                        <!--height="580" -->
-                    </p>
-
-
-                    <p>4. Set <strong>JiraStepdocReporter</strong> as the StepDocReporter implemenattion to use in your embedder's configuration, and then call reportStepdocs method on the Embedder instance after executing your story tests</p>
-                    <p class="fig">
-                        <img src="images/inst5.png"
-                             alt="Иллюстрация">
-                        <!--width="963" -->
-                        <!--height="961" -->
-                    </p>
-
-                    <p>A complete example project that contains the above changes applied can been downloaded from <a href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/src">this</a> location.</p>
-
-
-
-                </section>
-
+                    <div>
+                        Click on the links on the left to see how to complete each step
+                    </div>
+                </div>
+                <br>
             </div>
-        </div>
+
+            <div id="pageContentInstallPlugin" class="page-content">
+                <h2 id="ssylka1">Install Jira Plugin</h2>
+
+                <p>The "JBehave for Jira" plugin can be installed via the Jira's built in "Add-on Management"
+                    functionality</p>
+
+                <p>1. Navigate to "Add-ons" section from the administration menu and then click on "Find New
+                    Add-ons" from the menu on the left</p>
+
+                <p class="fig">
+                    <img src="images/installation/Install%20Jira%20Plugin%20-%201.png" width="800" height="480"
+                         alt="Иллюстрация">
+                </p>
+
+                </br>
+                <p>2. In the search field type in 'JBehave for Jira' and then click on either "Buy Now" or "Free
+                    Trial" against the "Jbehave for Jira" plugin entry. Follow the prompts from then on to
+                    complete
+                    the installation.
+                </p>
+
+                <p class="fig">
+                    <img src="images/installation/Install%20Jira%20Plugin%20-%202.png" width="800" height="480"
+                         alt="Иллюстрация">
+                </p>
+
+                <p>Note: if you are running an older version of Jira that does not come with the built in plugin
+                    manager functionality then please contact us for an alternative way on how to install this
+                    plugin in your Jira instance. </p>
+                <hr>
+                <br>
+            </div>
+
+            <!--<h3 id="ssylka2">Enable Plugin for a Jira project </h3>-->
+            <!--<p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira project. To do so go the "Manage Add-ons" page in the Administration area and then click on "Configure" button against "JBehave for Jira" plugin entry. </p>-->
+
+
+            <!--<p class="fig">-->
+            <!--<img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">-->
+            <!--</p>-->
+            <!--<p>2. In the opened plugin configuration screen, select General tab and then select the projects that you want to have the plugin enabled for and click the relevant arrow button to move it to the enabled projects box and then click Apply Changes button.-->
+            <!--</p>-->
+            <!--<hr>-->
+
+            <!--<br>-->
+
+            <div id="pageContentInstallClient" class="page-content">
+
+                <h2 id="ssylka3"> Download Plugin Client </h2>
+
+                <p>The plugin requires a Java client to work, which comes in the form of a Jar file that you
+                    need to
+                    have on your class path when running your JBehave tests. It can be downloaded from <a
+                            href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/downloads">this</a>
+                    location.</p>
+
+                <p>Maven users - the client library will soon be available for download from the maven central
+                    repository. Watch this space for an update.</p>
+
+                <hr>
+                <br>
+            </div>
+
+            <div id="pageContentConfigureClient" class="page-content">
+
+                <h2 id="ssylka4">Configure JBehave runner</h2>
+
+                <p>For the plugin client to exchange data with the plugin running in your Jira instance you need
+                    to
+                    make the following changes to your JBehave Embedder (runner):</p>
+
+                <p>1. Use <strong>JiraStoryPathsFinder</strong> implementation to find story paths</p>
+
+                <p class="fig">
+                    <img src="images/installation/Configure%20runner%20-%20JiraStoryPathsFinder.png"
+                         alt="Иллюстрация">
+                    <!--width="800" -->
+                    <!--height="705" -->
+                </p>
+
+                <p>2. Set <strong>JiraStoryLoader</strong> as the StoryLoader implemenation to use in your
+                    embedder's configuration
+                </p>
+
+                <p class="fig">
+                    <img src="images/installation/Configure%20runner%20-%20JiraStoryLoader.png"
+                         alt="Иллюстрация">
+                    <!--width="850" -->
+                    <!--height="580" -->
+                </p>
+
+                <p>3. Set <strong>JiraStoryReporter</strong> as the StoryReporter implementation to use in your
+                    embedder's configuration</p>
+
+                <p class="fig">
+                    <img src="images/installation/Configure%20runner%20-%20JiraStoryReporter.png"
+                         alt="Иллюстрация">
+                    <!--width="850" -->
+                    <!--height="580" -->
+                </p>
+
+
+                <p>4. Set <strong>JiraStepdocReporter</strong> as the StepDocReporter implemenattion to use in
+                    your
+                    embedder's configuration, and then call reportStepdocs method on the Embedder instance after
+                    executing your story tests</p>
+
+                <p class="fig">
+                    <img src="images/inst5.png"
+                         alt="Иллюстрация">
+                    <!--width="963" -->
+                    <!--height="961" -->
+                </p>
+
+                <p>A complete example project that contains the above changes applied can been downloaded from
+                    <a
+                            href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/src">this</a>
+                    location.</p>
+            </div>
+
+
+        </section>
+
     </div>
+</div>
+</div>
 </div>
 <div id="footer-wrapper">
     <div class="container">

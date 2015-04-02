@@ -1,0 +1,21 @@
+.page-shortcut-link.selected {
+    /*font-weight: bolder;*/
+    /*border: solid #118eb1 1px;*/
+   /* background-color: #848484;*/
+}
+
+}
+<style>
+a {
+    color: #007294; /* Цвет обычной ссылки */
+    padding: 2px; /* Поля вокруг текста */
+}
+a:visited {
+    color: #007294; /* Цвет посещенной ссылки */
+}
+a:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #848484; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #E6E6E6;/* Цвет фона */
+    padding: 2px
+}
