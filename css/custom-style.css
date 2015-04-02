@@ -45,9 +45,9 @@ ul.link-list li.page-shortcut-link {
     width: 100%;
 }
 
-/*.middle-content {*/
-    /*margin-left: 0;*/
-/*}*/
+.middle-content {
+    margin-left: 0;
+}
 
 /*.skel-cell-important {*/
     /*padding: 5;*/
