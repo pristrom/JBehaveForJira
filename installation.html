@@ -32,7 +32,10 @@
     }
 
     A:hover {
-        color: #0A0A2A; /* Ссылка  цвета */
+        color: #6ED729;/* Ссылка  цвета */
+    }
+    a:active {
+        color: #f00; /* Цвет активной ссылки */
     }
 </style>
 <div id="header-wrapper">
@@ -70,27 +73,22 @@
 
             <div>
                 <div class="row">
-                    <div class="11u">
+                    <div class="12u">
                         <ul class="link-list">
-                            <li>
-                                <div class="page-shortcut-link selected" controls="pageContentOverview">
-                                    <a href="#">
-                                        Overview
-                                    </a>
-                                </div>
-                                <!--<a href="#ssylka1" >Overview</a>-->
+                            <li class="page-shortcut-link selected">
+                                <a href="#pageContentOverview">Overview</a>
                             </li>
                             <li class="page-shortcut-link">
-                                <a href="#ssylka1" controls="pageContentInstallPlugin">Install Jira Plugin</a>
+                                <a href="#pageContentInstallPlugin">1. Install Plugin</a>
                             </li>
-                            <li class="page-shortcut-link" controls="pageContentConfigurePlugin">
-                                <a href="#ssylka1">Configure Jira Plugin</a>
+                            <li class="page-shortcut-link">
+                                <a href="#pageContentConfigurePlugin">2. Configure Plugin</a>
                             </li>
-                            <li class="page-shortcut-link" controls="pageContentInstallClient">
-                                <a href="#ssylka3">Install Plugin Client</a>
+                            <li class="page-shortcut-link">
+                                <a href="#pageContentInstallClient">3. Install Plugin Client</a>
                             </li>
-                            <li class="page-shortcut-link" controls="pageContentConfigureClient">
-                                <a href="#ssylka4">Configure Plugin Client</a>
+                            <li class="page-shortcut-link">
+                                <a href="#pageContentConfigureClient">4. Configure Plugin Client</a>
                             </li>
                         </ul>
                     </div>
@@ -101,38 +99,33 @@
     </div>
     <div class="9u skel-cell-important">
         <section class="middle-content">
-
             <div id="pageContentOverview" class="page-content selected">
                 <h2>Overview</h2>
 
                 <div>
-                    <p>In order to be able to make use of the JBehaveForJira plugin you need to complete the
-                        following steps:</p>
-
+                    <p>In order to be able to make use of the plugin you need to complete the following
+                        steps:</p>
                     <div>
-                        1. Install the Jira plugin
+                        <p>Step 1 - install the plugin</p>
                     </div>
                     <br>
-
                     <div>
-                        2. Configure the Jira plugin
+                        <p>Step 2 - configure the plugin</p>
                     </div>
                     <br>
-
                     <div>
-                        3. Install the plugin client
+                        <p>Step 3 - install the plugin client</p>
                     </div>
                     <br>
-
                     <div>
-                        4. Configure the plugin client
+                        <p>Step 4 - configure the plugin client</p>
                     </div>
                     <br>
                     <br>
 
-                    <div>
-                        Click on the links on the left to see how to complete each step
-                    </div>
+                    <!--<div>-->
+                    <!--<p>Click on the links on the left to see how to complete each step</p>-->
+                    <!--</div>-->
                 </div>
                 <br>
             </div>
@@ -170,18 +163,25 @@
                 <br>
             </div>
 
-            <!--<h3 id="ssylka2">Enable Plugin for a Jira project </h3>-->
-            <!--<p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira project. To do so go the "Manage Add-ons" page in the Administration area and then click on "Configure" button against "JBehave for Jira" plugin entry. </p>-->
+            <div id="pageContentConfigurePlugin" class="page-content">
+                <h3 id="ssylka2">Enable Plugin for a Jira project </h3>
+
+                <p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira
+                    project. To do so go the "Manage Add-ons" page in the Administration area and then click on
+                    "Configure" button against "JBehave for Jira" plugin entry. </p>
 
 
-            <!--<p class="fig">-->
-            <!--<img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">-->
-            <!--</p>-->
-            <!--<p>2. In the opened plugin configuration screen, select General tab and then select the projects that you want to have the plugin enabled for and click the relevant arrow button to move it to the enabled projects box and then click Apply Changes button.-->
-            <!--</p>-->
-            <!--<hr>-->
+                <p class="fig">
+                    <img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">
+                </p>
 
-            <!--<br>-->
+                <p>2. In the opened plugin configuration screen, select General tab and then select the projects
+                    that you want to have the plugin enabled for and click the relevant arrow button to move it
+                    to the enabled projects box and then click Apply Changes button.
+                </p>
+                <hr>
+            </div>
+
 
             <div id="pageContentInstallClient" class="page-content">
 
@@ -212,9 +212,10 @@
 
                 <p class="fig">
                     <img src="images/installation/Configure%20runner%20-%20JiraStoryPathsFinder.png"
+                         width="800"
+                         height="705"
                          alt="Иллюстрация">
-                    <!--width="800" -->
-                    <!--height="705" -->
+
                 </p>
 
                 <p>2. Set <strong>JiraStoryLoader</strong> as the StoryLoader implemenation to use in your
@@ -223,9 +224,10 @@
 
                 <p class="fig">
                     <img src="images/installation/Configure%20runner%20-%20JiraStoryLoader.png"
+                         width="850"
+                         height="580"
                          alt="Иллюстрация">
-                    <!--width="850" -->
-                    <!--height="580" -->
+
                 </p>
 
                 <p>3. Set <strong>JiraStoryReporter</strong> as the StoryReporter implementation to use in your
@@ -233,9 +235,10 @@
 
                 <p class="fig">
                     <img src="images/installation/Configure%20runner%20-%20JiraStoryReporter.png"
+                         width="850"
+                         height="580"
                          alt="Иллюстрация">
-                    <!--width="850" -->
-                    <!--height="580" -->
+
                 </p>
 
 
@@ -246,9 +249,10 @@
 
                 <p class="fig">
                     <img src="images/inst5.png"
+                         width="963"
+                         height="961"
                          alt="Иллюстрация">
-                    <!--width="963" -->
-                    <!--height="961" -->
+
                 </p>
 
                 <p>A complete example project that contains the above changes applied can been downloaded from
@@ -256,8 +260,6 @@
                             href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/src">this</a>
                     location.</p>
             </div>
-
-
         </section>
 
     </div>

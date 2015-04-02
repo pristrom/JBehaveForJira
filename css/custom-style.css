@@ -1,21 +1,54 @@
 .page-shortcut-link.selected {
-    /*font-weight: bolder;*/
+    font-weight: bolder;
     /*border: solid #118eb1 1px;*/
-   /* background-color: #848484;*/
-}
+    /*background-color: #848484;*/
 
 }
-<style>
-a {
-    color: #007294; /* Цвет обычной ссылки */
-    padding: 2px; /* Поля вокруг текста */
+
+.page-content {
+    display: none;
 }
-a:visited {
-    color: #007294; /* Цвет посещенной ссылки */
+
+.page-content.selected {
+    display: inherit;
 }
+
 a:hover {
     text-decoration: none; /* Убираем подчеркивание */
-    color: #848484; /* Цвет ссылки при наведении на нее курсора мыши */
-    background: #E6E6E6;/* Цвет фона */
-
+    color: #27D63C; /* Цвет ссылки при наведении на нее курсора мыши */
+    background: #E6E6E6; /* Цвет фона */
 }
+
+.link-list {
+    list-style-type: none;
+}
+
+.nav-menu {
+    /*background: 1px lightgreen;*/
+}
+
+ul.link-list li.page-shortcut-link {
+    /*background: 1px lightgreen;*/
+    /*border-style: solid;*/
+    /*border-color: blue;*/
+    /*border-width: 1px;*/
+    /*margin: 0px;*/
+    /*padding: 0.75em 0 0 0.75em;*/
+    /*margin: 0;*/
+}
+
+.bordered {
+    background: lightgoldenrodyellow;
+}
+
+.wide {
+    width: 100%;
+}
+
+/*.middle-content {*/
+    /*margin-left: 0;*/
+/*}*/
+
+/*.skel-cell-important {*/
+    /*padding: 5;*/
+/*}*/

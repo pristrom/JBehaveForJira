@@ -3,9 +3,18 @@ $(document).ready(function () {
 
     $(".page-shortcut-link").each(function () {
         $(this).on('click', 'a', function (event) {
-            $(this).parent().find(".page-shortcut-link").removeClass("selected");
-            $(event.target).parent().addClass("selected");
+            event.preventDefault();
             console.log("on click handler! this - " + this.text);
+
+            $(".page-shortcut-link").removeClass("selected");
+            $(".page-content").removeClass("selected");
+
+            $(event.target).parent().addClass("selected");
+
+            var hrefAttr = $($(this)[0]).attr("href");
+            console.log("hrefAttr - " + hrefAttr);
+
+            $(hrefAttr).addClass("selected");
         });
 
     });

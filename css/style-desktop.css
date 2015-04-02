@@ -31,7 +31,9 @@
 	}
 
 	section.middle-content {
-		padding: 0 30px 0 30px;/*FAQ osnovnaya statjya*/
+        position: relative;
+
+      padding: 0 20px 0 0px;*//*FAQ osnovnaya statjya*//
 	}
 
 	ul.small-image-list img {

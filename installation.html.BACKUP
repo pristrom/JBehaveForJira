@@ -1,0 +1,321 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Jbehave for JIRA</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-panels.min.js"></script>
+    <!--<noscript>-->
+        <link rel="stylesheet" href="css/skel-noscript.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style-desktop.css"/>
+    <!--</noscript>-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <script src="js/html5shiv.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <script src="js/custom_scripts.js"></script>
+</head>
+<body>
+<!-- ********************************************************* -->
+<style type="text/css">
+    A {
+        text-decoration: none; /* Убирает подчеркивание для ссылок */
+    }
+
+    A:hover {
+        color: #6ED729; /* Ссылка  цвета */
+    }
+
+    a:active {
+        color: #f00; /* Цвет активной ссылки */
+    }
+</style>
+<div id="header-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="12u">
+                <header id="header">
+                    <a href="index.html"><img src="images/logo_90x90.png" alt="" class="logotip"/></a>
+
+                    <h1><a href="index.html" id="logo">JBehave for JIRA</a></h1>
+
+
+                    <nav id="nav">
+                        <a href="index.html">Home</a>
+                        <a href="howitworks.html">How it works</a>
+                        <a href="feature.html">Features</a>
+                        <a href="benefits.html">Benefits</a>
+                        <a href="installation.html" class="current-page-item">Installation</a>
+                        <a href="support.html">Support</a>
+                        <!--<a href="faq.html">FAQ</a>-->
+                    </nav>
+                </header>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+<div class="container">
+<div class="row main-row">
+<div class="3u">
+    <section>
+        <!--<h2>Installation</h2>-->
+        <div class="nav-menu">
+            <div class="row">
+                <div class="12u">
+                    <ul class="link-list">
+                        <li class="page-shortcut-link selected">
+                            <a href="#pageContentOverview">Overview</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentInstallPlugin">1. Install Plugin</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentConfigurePlugin">2. Configure Plugin</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentInstallClient">3. Install Plugin Client</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentConfigureClient">4. Configure Plugin Client</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="9u skel-cell-important">
+    <section class="middle-content">
+
+        <div id="pageContentOverview" >
+            <h2>Overview</h2>
+
+            <div>
+                <p>In order to be able to make use of the plugin you need to complete the following
+                    steps:</p>
+                <div>
+                    <p>Step 1 - install the plugin</p>
+                </div>
+                <br>
+                <div>
+                    <p>Step 2 - configure the plugin</p>
+                </div>
+                <br>
+                <div>
+                    <p>Step 3 - install the plugin client</p>
+                </div>
+                <br>
+                <div>
+                    <p>Step 4 - configure the plugin client</p>
+                </div>
+                <br>
+                <br>
+
+                <!--<div>-->
+                <!--<p>Click on the links on the left to see how to complete each step</p>-->
+                <!--</div>-->
+            </div>
+            <br>
+        </div>
+
+        <div id="pageContentInstallPlugin" class="page-content">
+            <h2 id="ssylka1">Install Jira Plugin</h2>
+
+            <p>The "JBehave for Jira" plugin can be installed via the Jira's built in "Add-on Management"
+                functionality</p>
+
+            <p>1. Navigate to "Add-ons" section from the administration menu and then click on "Find New
+                Add-ons" from the menu on the left</p>
+
+            <p class="fig">
+                <img src="images/installation/Install%20Jira%20Plugin%20-%201.png" width="800" height="480"
+                     alt="Иллюстрация">
+            </p>
+
+            </br>
+            <p>2. In the search field type in 'JBehave for Jira' and then click on either "Buy Now" or "Free
+                Trial" against the "Jbehave for Jira" plugin entry. Follow the prompts from then on to
+                complete
+                the installation.
+            </p>
+
+            <p class="fig">
+                <img src="images/installation/Install%20Jira%20Plugin%20-%202.png" width="800" height="480"
+                     alt="Иллюстрация">
+            </p>
+
+            <p>Note: if you are running an older version of Jira that does not come with the built in plugin
+                manager functionality then please contact us for an alternative way on how to install this
+                plugin in your Jira instance. </p>
+            <hr>
+            <br>
+        </div>
+
+        <div id="pageContentConfigurePlugin" class="page-content">
+            <h3 id="ssylka2">Enable Plugin for a Jira project </h3>
+
+            <p>1. Once the plugin has successfully been installed you will need to enable it for a specific Jira
+                project. To do so go the "Manage Add-ons" page in the Administration area and then click on
+                "Configure" button against "JBehave for Jira" plugin entry. </p>
+
+
+            <p class="fig">
+                <img src="images/inst6.png" width="800" height="480" alt="Иллюстрация">
+            </p>
+
+            <p>2. In the opened plugin configuration screen, select General tab and then select the projects
+                that you want to have the plugin enabled for and click the relevant arrow button to move it
+                to the enabled projects box and then click Apply Changes button.
+            </p>
+            <hr>
+        </div>
+
+
+        <div id="pageContentInstallClient" class="page-content">
+
+            <h2 id="ssylka3"> Download Plugin Client </h2>
+
+            <p>The plugin requires a Java client to work, which comes in the form of a Jar file that you
+                need to
+                have on your class path when running your JBehave tests. It can be downloaded from <a
+                        href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/downloads">this</a>
+                location.</p>
+
+            <p>Maven users - the client library will soon be available for download from the maven central
+                repository. Watch this space for an update.</p>
+
+            <hr>
+            <br>
+        </div>
+
+        <div id="pageContentConfigureClient" class="page-content">
+
+            <h2 id="ssylka4">Configure JBehave runner</h2>
+
+            <p>For the plugin client to exchange data with the plugin running in your Jira instance you need
+                to
+                make the following changes to your JBehave Embedder (runner):</p>
+
+            <p>1. Use <strong>JiraStoryPathsFinder</strong> implementation to find story paths</p>
+
+            <p class="fig">
+                <img src="images/installation/Configure%20runner%20-%20JiraStoryPathsFinder.png"
+                     width="800"
+                     height="705"
+                     alt="Иллюстрация">
+
+            </p>
+
+            <p>2. Set <strong>JiraStoryLoader</strong> as the StoryLoader implemenation to use in your
+                embedder's configuration
+            </p>
+
+            <p class="fig">
+                <img src="images/installation/Configure%20runner%20-%20JiraStoryLoader.png"
+                     width="850"
+                     height="580"
+                     alt="Иллюстрация">
+
+            </p>
+
+            <p>3. Set <strong>JiraStoryReporter</strong> as the StoryReporter implementation to use in your
+                embedder's configuration</p>
+
+            <p class="fig">
+                <img src="images/installation/Configure%20runner%20-%20JiraStoryReporter.png"
+                     width="850"
+                     height="580"
+                     alt="Иллюстрация">
+
+            </p>
+
+
+            <p>4. Set <strong>JiraStepdocReporter</strong> as the StepDocReporter implemenattion to use in
+                your
+                embedder's configuration, and then call reportStepdocs method on the Embedder instance after
+                executing your story tests</p>
+
+            <p class="fig">
+                <img src="images/inst5.png"
+                     width="963"
+                     height="961"
+                     alt="Иллюстрация">
+
+            </p>
+
+            <p>A complete example project that contains the above changes applied can been downloaded from
+                <a
+                        href="https://bitbucket.org/pristrom/jbehave-for-jira-example-project/src">this</a>
+                location.</p>
+        </div>
+
+    </section>
+
+</div>
+</div>
+</div>
+</div>
+<div id="footer-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+
+                <section>
+
+
+                    </br>
+                    <h2>Links</h2>
+
+                    <div class="row">
+                        <div class="3u">
+                            <ul class="link-list">
+                                <li><a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin"
+                                       target="_blank">Atlassian Marketplace</a></li>
+                                <li>
+                                    <a href="https://answers.atlassian.com/dosearchsite.action?queryString=jbehave%20for%20jira&startIndex=0&where=conf_all"
+                                       target="_blank">Atlassian Answers</a></li>
+                                <li><a href="http://jbehave.org/" target="_blank">JBehave</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </section>
+
+            </div>
+            <div class="4u">
+
+                <section>
+                    </br>
+                    <h2>Contact info</h2>
+                    <ul class="link-list">
+                        <li>Address: Prague, Czech Republic</li>
+                        <li>E-mail: <a href="#">m.pristrom@gmail.com</a></li>
+                        <li> &copy; Untitled All rights reserved by Maryna Pristrom</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="12u">
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ********************************************************* -->
+</body>
+</html>
