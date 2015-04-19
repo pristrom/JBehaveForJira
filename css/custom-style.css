@@ -1,5 +1,8 @@
-.page-shortcut-link.selected {
+.page-shortcut-link.selected a {
     font-weight: bolder;
+
+    color:#27D63C;;
+
     /*border: solid #118eb1 1px;*/
     /*background-color: #848484;*/
 
@@ -13,11 +16,7 @@
     display: inherit;
 }
 
-a:hover {
-    text-decoration: none; /* Убираем подчеркивание */
-    color: #27D63C; /* Цвет ссылки при наведении на нее курсора мыши */
-    background: #E6E6E6; /* Цвет фона */
-}
+
 
 .link-list {
     list-style-type: none;

@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Jbehave for JIRA</title>
+    <title>JBehave for JIRA</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
@@ -16,11 +16,13 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/style-desktop.css"/>
     </noscript>
-    <link rel="stylesheet" href="css/custom-style.css"/>
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="css/ie9.css"/><![endif]-->
     <!--[if lte IE 8]>
     <script src="js/html5shiv.js"></script><![endif]-->
+
+    <link rel="stylesheet" href="css/custom-style.css"/>
+    <script src="js/custom_scripts.js"></script>
 </head>
 <body>
 <!-- ********************************************************* -->
@@ -58,36 +60,43 @@
 </div>
 <div id="main">
 <div class="container">
-<div class="row main-row">
+    <div class="row main-row">
+        <div class="3u">
 
-    <!--bokovo jemenu-->
-    <!--<div class="3u">-->
+            <section>
 
-        <!--<section>-->
-            <!--<h2>Documentation</h2>-->
+        <div>
+            <div class="row">
+                <div class="12u">
 
-            <!--<div>-->
-                <!--<div class="row">-->
-                    <!--<div class="11u">-->
-                        <!--<ul class="link-list">-->
-                            <!--<li><a href="#">How it works</a></li>-->
-                            <!--<li><a href="#">Installation gaide</a></li>-->
-                            <!--<li><a href="#">Download documentation in PDF</a></li>-->
+                    <ul class="link-list">
+                        <h2>Features:</h2>
+                        <li class="page-shortcut-link selected">
+                            <a href="#pageContentStorysyntaxvalidation">Story syntax validation</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentStepavailabilityidentification">Step availability identification</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentAutocompletesupport">Autocomplete support</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentStoryreportsdirectlyinJira">Story reports directly in Jira</a>
+                        </li>
+                        <li class="page-shortcut-link">
+                            <a href="#pageContentAdvancedfeaturesforstepparameters">Advanced features for step parameters</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-                        <!--</ul>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-
-
-    <!--</div>-->
-
-
-    <div class="12u skel-cell-important">
+    <div class="9u skel-cell-important">
         <section class="middle-content">
-
-                    <h2>1. Story syntax validation</h2>
+            <div id="pageContentStorysyntaxvalidation" class="page-content selected">
+                    <h2> Story syntax validation</h2>
 
                     <p>If you make a mistake in the story, e.g. misspell a keyword or place it in the wrong position
                         then this will be highlighted (underscored in red) as an error enabling you to easily identify
@@ -99,17 +108,25 @@
                         <img src="images/skrin1.jpg" width="800" height="404" alt="Иллюстрация">
                     </p>
 
+            </div>
+            <div id="pageContentStepavailabilityidentification" class="page-content">
+                    <h2 id="ssylka1">Step availability identification</h2>
 
-                    </br>
-
-                    <h2>2. Step availability identification</h2>
 
                     <p>When you include a step in your story that has been implemented it should be styled using a
                         regular font and any step parameters will be marked in bold and purple color. Any new or pending
                         steps on the other hand will be shown in italic font without any parameter markings.</p>
-                    <hr>
-                    </br>
-                    <h2>3. Autocomplete support</h2>
+
+
+            </div>
+
+
+
+
+
+            <div id="pageContentAutocompletesupport" class="page-content">
+                        <h2 id="ssylka2">Autocomplete support</h2>
+
 
                     <p>Have you ever had to write a JBehave story outside of an IDE? Then you would know what a pain it
                         is to actually figure our what steps are available and what step parameters are expected to be
@@ -124,9 +141,11 @@
                         <img src="images/skrin2.jpg" width="800" height="404" alt="Иллюстрация">
                     </p>
 
-                    <hr>
-                    </br>
-                    <h2>4. Story reports directly in Jira</h2>
+            </div>
+
+            <div id="pageContentStoryreportsdirectlyinJira" class="page-content">
+
+                <h2 id="ssylka3">Story reports directly in Jira</h2>
 
                     <p>If you have been lacking a quick and simple way to share your story run reports with the rest of
                         your team then you will appreciate this feature. View HTML reports produced by executing the
@@ -140,16 +159,17 @@
                     <p class="fig">
                         <img src="images/skrin4.jpg" width="800" height="404" alt="Иллюстрация">
                     </p>
-                    <hr>
-                    </br>
-                    <h2> Advanced features for step parameters</h2>
+
+            </div>
+
+            <div id="pageContentAdvancedfeaturesforstepparameters" class="page-content">
+                    <h2 id="ssylka4">Advanced features for step parameters</h2>
+
 
                     <p>Step parametrization is the essence of BDD style story writing and in order to get the most value
                         out of it you need to be able to specify them with ease, that is why we have concentrated our
                         efforts on implementing additional support for specifying step parameter values, both for simple
                         and for tabular parameter types. </p>
-
-                    <h2>Features that help with this:</h2>
 
                     <p>• Missing parameter highlight (more info)</p>
 
@@ -180,31 +200,17 @@
 
                     <p>• Automatic validation of individual values inside tabular parameters against allowed values or
                         format specified in step implementation and more...</p>
-
-                </section>
-
-
-            </div>
-            <div class="3u">
-                           <!--Kartinka so ssylkoy na marketplace
-                <section>
-
-                    <a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin"><img
-                            src="images/pic8.jpg" alt="" class="left"/></a>
-
-
-                </section>
-                   -->
             </div>
 
-            </br>
-            </br>
 
-
-        </div>
+    </section>
+    </div>
     </div>
 </div>
 </div>
+
+
+
 <div id="footer-wrapper">
     <div class="container">
         <div class="row">
@@ -216,7 +222,7 @@
                     <h2>Links</h2>
 
                     <div class="row">
-                        <div class="3u">
+                        <div class="4u">
                             <ul class="link-list">
                                 <li><a href="https://marketplace.atlassian.com/plugins/com.jbehaveforjira.plugin"
                                        target="_blank">Atlassian Marketplace</a></li>
