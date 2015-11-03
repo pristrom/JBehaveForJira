@@ -22,7 +22,7 @@
 	}
 
 	section.left-content {
-		padding-right: 20px;/*features osnovnaya statya*/
+		padding-right: 15px;/*features osnovnaya statya*/
 	}
 
 	section.right-content {
@@ -147,12 +147,12 @@
         vertical-align: middle;
 		position: relative;
 		width: 1160px;
-		height: 200px;
+		height: 180px;
 		margin: 1.5% 0 1.5% 0;
 		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
 		border-radius: 10px;
 		padding: 20px;
-		background: #fff url(images/banner1.jpg) no-repeat 20px 20px;
+		background: #fff url(images/banner1.jpg) no-repeat 20px 10px;
 		background-size: 1160px 195px;
                 z-index:1;
 	}
@@ -163,11 +163,11 @@
 			z-index: 1;
 			width: 95%;
             position: absolute;
-            bottom: 95px;
+            bottom: 90px;
 			font-size: 2.5em;
 			color: #007897;
 			text-align: center;
-			letter-spacing: -4px;
+			letter-spacing: -3px;
 
 		}
 		
@@ -176,10 +176,10 @@
 			position: absolute;
 			z-index: 2;
 			width: 100%;
-			bottom: 85px;
+			bottom: 80px;
 			left: 0;
-			font-size: 2.3em;
-			color: #fff;
+			font-size: 2.1em;
+			color: #1C8DCA;
 			text-align: center;
 			letter-spacing: -2px;
 			
